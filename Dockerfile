@@ -20,5 +20,6 @@ RUN apk --no-cache add \
     gcloud config set component_manager/disable_update_check true && \
     gcloud config set metrics/environment github_docker_image && \
     gcloud components install kubectl && \
+    gcloud components install beta && \
     gcloud components install docker-credential-gcr --quiet && \
     docker-credential-gcr configure-docker
